@@ -1,9 +1,9 @@
 html {
-	background-color:#dbdbdb;
+	background-color:black;
 }
 body {
 	margin-top:40px;
-	border:15px #dbdbdb solid;
+	border:15px black solid;
 }
 h1 {
 	font-style:italic;
@@ -24,97 +24,78 @@ h2 {
 .alert-danger {
 	color:#A72200;
 }
+.content {
+	background-color:black;
+	color:white;
+	font-family:'PT Serif', serif;
+}
 .copyrightFooter {
 	font-size:75%;
 	font-style:italic;
-	color:black;
-	background-color:#dbdbdb;
+	color:lightgrey;
+	background-color:black;
 	text-align:right;
 }
-.inverse {
+.iframe-container {
+	overflow:hidden;
+	padding-top:50%;
+	position:relative;
+}
+.iframe-container iframe {
+	border:0;
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+.navbar { 
+	background-color:black;
+}
+a.nav-link {
+	background-color:#black;
 	color:white;
-	background-color:#dbdbdb;
-}
-.italic {
-	font-style:italic;
-}
-.navbar-custom { 
-	background-color:#dbdbdb;
-	padding-top:0;
-}
-.navbar-custom a.nav-link {
-	background-color:#1e3296;
-	font-weight:bold;
-	color:#dbdbdb;
-	margin-right:5px;
-	border-radius:0 0 10px 10px;
+	padding:5px;
 	text-transform:uppercase;
 }
-.navbar-custom a.nav-link.active {
-	background-color:#A72200;
+a.nav-link.active {
+	border-top:1px white solid;
+	border-bottom:1px white solid;
 	color:white;
+	font-weight:bold;
 }
-.navbar-custom a.nav-link:hover{
-	background-color:#A72200;
+a.nav-link:hover{
 	color:white;
+	font-weight:bold;
+}
+.carousel-item img {
+	margin:auto;
 }
 .table {
-	border-bottom:1px #DEE2E6 solid;
-}
-.thead-light {
-	font-style:italic;
-}
-.table-sm {
-	border-bottom:none;
-}
-.table-sm tbody td {
-	border-top:none;
-	padding-top:1px;
-	padding-bottom:1px;
-}
-.table-sm tbody td.footer {
-	border-top:1px #DEE2E6 solid;
+	border-bottom:1px white solid;
 }
 .title {
 	font-weight:bold;
 	font-size:250%;
 	margin:15px 0;
 }
+.title-row {
+	background-color:black;
+	color:white;
+}
 .subtitle {
-	text-transform:uppercase;
-	font-style:italic;
-	font-size:150%;
+	font-family:'PT Serif', serif;
+	font-size:175%;
 }
 #gallery {
-	background-color:#dbdbdb;
+	background-color:black;
 }
 #gallery img {
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-right:10px;
-	padding-left:10px;
-}
-#contact {
-	border:none;
-}
-#contact th {
-	border:none;
-}
-#contact td {
-	border:none;
-}
-#contactForm {
-	padding:15px;
-}
-#contactForm .col-form-label {
-	font-weight:bold;
+	padding:10px;
 }
 @media (max-width: 575.98px) {
-	.navbar-custom a.nav-link {
-		padding:5px 0;
-		margin-bottom:5px;
-		border-radius:10px;
+	a.nav-link {
+		padding:5px;
 		text-align:center;
-		width:100px;
 	}
 }
